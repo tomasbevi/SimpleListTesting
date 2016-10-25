@@ -1,0 +1,40 @@
+		  <div class="modal-body">
+			<form id="formnuevoitem">
+					<input id="img-input" type="hidden" name="img" >
+					<div class="form-group">
+						<label for="exampleInputEmail1">Title:</label>
+						<input maxlength="100" name="nombre" type="text" class="form-control" value="">
+						<label for="exampleInputEmail1">Description:</label>
+						<textarea maxlength="300" name="description" class="form-control" rows="3"></textarea>
+						<p class="help-block">Max chars 300.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="form-group">
+					
+						<span class="btn btn-success fileinput-button">
+							<i class="glyphicon glyphicon-plus"></i>
+							<span>Select files...</span>					 
+							<input id="fileupload" type="file" name="files[]" data-url="assets/jQuery-File-Upload/server/php/" multiple>
+						</span>
+						<br>
+						<br>
+						<!-- The global progress bar -->
+						<div id="progress" class="progress">
+							<div class="progress-bar progress-bar-success"></div>
+						</div>
+						<!-- The container for the uploaded files -->
+						<div id="files" class="files"></div>
+					<p class="help-block">jpg, gif and png extensions of 320px x 320px.</p>
+					</div>
+					
+					
+					
+					
+					<button type="button" class="btn btn-default btn-close" >Close</button>
+					<button type="button" class="btn btn-primary btn-new-item-save">Save changes</button>
+			</form>
+		  </div>
